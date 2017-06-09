@@ -1,0 +1,142 @@
+$a: #dde8f0;
+$b: #97cbdc;
+$c: #018abd;
+$d: #004581;
+$e: #001b48;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+}
+p, h1, h2, h3 {
+	color: $e;
+}
+.wrapper {
+	display: table;
+	width: 100%;
+	position: relative;
+	min-width: 320px;
+	min-height: 100%;
+	background-color: $a;
+}
+.wrapper header.header, .wrapper .content, .wrapper footer.footer {
+	display: table-row;
+	width: 100%;
+	position: relative;
+}
+.wrapper header.header {
+	min-height: 110px;
+	background-color: $c;
+	z-index: 100;
+}
+.wrapper header.header>.container>.row {
+	padding: 35px 15px 0 15px;
+}
+.wrapper .content{
+	background-color: $a;
+	min-height: 53%;
+	color: $e;
+	
+}
+.wrapper .content>.container>.row {
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+.wrapper .line {
+	background-color: $b;
+	height: 5px;
+}
+.wrapper footer.footer {
+	background-color: $c;
+	border-top: 5px solid $b;
+	height: 350px;
+}
+.wrapper footer.footer>.container {
+	height: 300px;
+	color: $a;
+}
+.wrapper footer.footer>.container h2 {
+	color: $a;
+}
+.wrapper footer.footer>.sub {
+	background-color: $d;
+	height: 50px;
+}
+.sub .year {
+	padding: 15px;
+	color: $a;
+	text-align: right;
+}
+.wrapper .content .block {
+	min-height: 300px;
+}
+
+/*Navbar*/
+.navbar.navbar-main {
+	border-radius: 0;
+}	
+.navbar-main a {
+	color: $b;
+}
+.navbar-main .icon-bar {
+	background-color: $b;
+}
+.navbar-main .nav .open>a, .navbar-main .nav .open>a:focus, .navbar-main .nav .open>a:hover {
+	background-color: $c;
+	color: $b;
+}
+.navbar-main .nav>li>a:focus, .navbar-main .nav>li>a:hover {
+	background-color: $b;
+	color: $c;
+}
+.navbar-main .navbar-nav>li>.dropdown-menu, .navbar-main .dropdown-menu>li>a {
+	background-color: $c;
+	color: $b;
+}
+.navbar-main .dropdown-menu .divider {
+	background-color: $d;
+}
+.navbar-main .dropdown-menu>li>a:focus, .navbar-main .dropdown-menu>li>a:hover {
+	background-color: $b;
+	color: $c;
+}
+.navbar-main .form-control {
+	border: 1px solid $d;
+}
+.navbar-main input.form-control {
+	background-color: $a;
+	color: $c;
+}
+.navbar-main .btn-default {
+	background-color: $b;
+	color: $a;
+	border-color: $d;
+}
+/*Breadcumb*/
+.breadcrumb.theme {
+	padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: $b;
+	border-radius: 0;
+	text-align: center;
+}
+.breadcrumb.theme>li.active {
+	color: $d;
+}
+.breadcrumb.theme>li>a {
+	color: $e;
+	text-decoration: underline;
+}
+.breadcrumb.theme>li>a:hover {
+	text-decoration: none;
+}
+.breadcrumb.theme>li+li:before {
+	content: "\025B8";
+	color: $e;
+	
+}
